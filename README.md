@@ -64,9 +64,9 @@ por fim, considere a tabela abaixo:
 | 03   | ex    | pr         | no         | --         | t1         |
 | 04   | ex    | --         | pr         | no         | t1, t2     |
 | 05   | ex t1 | --         | --         | pr         | t2, t3     |
-| 06   | --    | ex linha 1 | --         | --         | t2, t3     |
-| 07   | ex t2 | su 1       | --         | --         | t2, t3     |
-| 08   | --    | su 2       | ex linha 1 | --         | t3         |
+| 06   | --    | ex linha 1 | su 1       | --         | t2, t3     |
+| 07   | ex t2 | su 1       | su 1       | --         | t2, t3     |
+| 08   | --    | su 2       | su 2       | t3         |
 | 09   | ex t3 | pr         | su 1       | --         | t1         |
 | 10   | --    | --         | su 2       | ex linha 1 | t1         |
 | 11   | ??    | ??         | ??         | ??         | t1         |
