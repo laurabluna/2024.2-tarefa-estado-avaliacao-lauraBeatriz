@@ -15,7 +15,7 @@ considerando que cada código abaixo em linguarem c esta dentro de uma função 
 ```c
 FILE * fp = fopen("exemplo", "w+");
 int count = 1;
-while (count > 5) {
+while (count < 5) {
   fprintf(fp, "%d ", count);
   printf("%d\n", count);
   count++;
@@ -27,7 +27,7 @@ fclose(fp);
 ```c
 FILE * fp = fopen("exemplo", "w+");
 int count = 1;
-while (count > 5) {
+while (count < 5) {
   fprintf(fp, "%d ", count);
   count++;
 }
@@ -37,7 +37,7 @@ fclose(fp);
 **t3** Tarefa 3
 ```c
 int count = 1;
-while (count > 5) {
+while (count < 5) {
   count++;
 }
 ```
@@ -89,7 +89,7 @@ continue o preenchimento da tabela abaixo, considerando que o sistema operaciona
 | 09   | ex t3 | pr         | su 1       | --         | t1         |
 | 10   | --    | --         | su 2       | ex linha 1 | t1         |
 | 11   | ??    | ??         | ??         | ??         | t1         |
-| 12   | ??    | ??         | ??         | ??         | t1         |
+| 12   | ??    | ??         | ??         | fi         | t1         |
 
 ## Tarefa 2 - fatia tempo com valor 10 ticks
 
